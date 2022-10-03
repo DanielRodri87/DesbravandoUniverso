@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daniel Rodrigues - Tabuleiro</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/time.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="JavaScript/move.js"></script>
+    <script src="JavaScript/conf.js"></script>
+    <script src="JavaScript/dado.js"></script>
+    <script src="JavaScript/sorte.js"></script>
+    <script src="JavaScript/pergunta.js"></script>
+    <script src="JavaScript/time.js"></script>
+</head>
+<body>
+    <div class="container" id="container">
+
+        <div id="jogadores">
+            <img id="play1" class="player" src="img/Peao-Grow-Branco.png" alt=""> 
+            <img id="play2" class="player" src="img/Peao-Grow-Azul.png" alt=""> 
+            <img id="play3" class="player" src="img/Peao-Grow-Preto.png" alt=""> 
+            <img id="play4" class="player" src="img/Peao-Grow-Verde.png" alt="">
+        </div>
+
+        <div id="div_dado">
+            <img id="face" src="img/face1.png" onclick="sorteioDado()">
+            <h3 id="ultimoSorteado">Face anterior: </h3>
+            <h3 id="avisoDualsSorteio"></h3>
+        </div> 
+
+        <div id="div_sorte">
+            <img id="sorte" src="img/sorte.png" alt="" onclick="sorteioSorte()">
+            <h4 id="sorte_sorteada">Sorte ou Azar</h4>
+        </div> 
+
+        <div id="div_pergunta">
+            <img id="sorte" src="img/pergunta.png" alt="" onclick="sorteioPergunta()">
+            <h4 id="pergunta">Você deverá responder uma pergunta</h4>
+        </div> 
+
+        <div class="info">
+            <h1 id="info"></h1>
+        </div>
+
+
+        <div id="imagem">
+            <img id="imgjogo" src="img/img_table.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
