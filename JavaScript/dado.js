@@ -1,9 +1,7 @@
 var ultimaFace = 1;
 var faceAnterior = 1;
 var j = 1;
-if (j == 4){
-    j = 1;
-}
+
 
 function sorteioDado(){
     
@@ -16,6 +14,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c1.left + 'px';
                 document.getElementById('play'+ j).style.top = c1.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
                 
             } else {
                 document.getElementById('face').src = 'img/face1.png';
@@ -23,6 +24,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c1.left + 'px';
                 document.getElementById('play'+ j).style.top = c1.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
             };
             document.getElementById('ultimoSorteado').innerHTML = 'Face Anterior: ' + faceAnterior;
             ultimaFace = 1;
@@ -35,6 +39,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c2.left + 'px';
                 document.getElementById('play'+ j).style.top = c2.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
 
             } else {
                 document.getElementById('face').src = 'img/face2.png';
@@ -42,6 +49,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c2.left + 'px';
                 document.getElementById('play'+ j).style.top = c2.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
             };
             document.getElementById('ultimoSorteado').innerHTML = 'Face Anterior: ' + faceAnterior;
             ultimaFace = 2;
@@ -54,6 +64,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c3.left + 'px';
                 document.getElementById('play'+ j).style.top = c3.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
                 
             } else {
                 document.getElementById('face').src = 'img/face3.png';
@@ -61,6 +74,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c3.left + 'px';
                 document.getElementById('play'+ j).style.top = c3.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
             };
             document.getElementById('ultimoSorteado').innerHTML = 'Face Anterior: ' + faceAnterior;
             ultimaFace = 3;
@@ -72,6 +88,9 @@ function sorteioDado(){
 
                 document.getElementById('play'+ j).style.left = c4.left + 'px';
                 document.getElementById('play'+ j).style.top = c4.top + 'px';
+                if (j>4){
+                    j = 1;
+                }
                 j++;
             } else {
                 document.getElementById('face').src = 'img/face4.png';
@@ -79,6 +98,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c4.left + 'px';
                 document.getElementById('play'+ j).style.top = c4.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
 
             };
             document.getElementById('ultimoSorteado').innerHTML = 'Face Anterior: ' + faceAnterior;
@@ -92,6 +114,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c5.left + 'px';
                 document.getElementById('play'+ j).style.top = c5.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
 
             } else {
                 document.getElementById('face').src = 'img/face5.png';
@@ -99,6 +124,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c5.left + 'px';
                 document.getElementById('play'+ j).style.top = c5.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
             };
             document.getElementById('ultimoSorteado').innerHTML = 'Face Anterior: ' + faceAnterior;
             ultimaFace = 5;
@@ -111,6 +139,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c6.left + 'px';
                 document.getElementById('play'+ j).style.top = c6.top + 'px';
                 j++;
+                if (j>4){
+                    j = 1;
+                }
 
             } else {
                 document.getElementById('face').src = 'img/face6.png';
@@ -118,6 +149,9 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c6.left + 'px';
                 document.getElementById('play'+ j).style.top = c6.top + 'px';
                 j++;
+                if (j > 4){
+                    j = 1;
+                }
             };
             document.getElementById('ultimoSorteado').innerHTML = 'Face Anterior: ' + faceAnterior;
             ultimaFace = 6;
