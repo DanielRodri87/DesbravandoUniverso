@@ -2,9 +2,28 @@ var ultimaFace = 1;
 var faceAnterior = 1;
 var j = 1;
 
+// Se j for 1: ampliar o tamanho da peça branca
+// Se j for 2: reduzir o tamanho da peça branca e aumentar da azul
+// Se j for 3: reduzir o tamanho da peça azul e aumentar da preta
+// Se j for 4: reduzir o tamanho da peça preta e aumentar da verde
+
+
 
 function sorteioDado(){
-    
+
+
+    if (j == 1) {
+        // enviar a imagem play1.png
+        document.getElementById("popup").src = "img/play1.png";
+    } else if (j == 2) {
+        document.getElementById("popup").src = "img/play2.png";
+    } else if (j == 3) {
+        document.getElementById("popup").src = "img/play3.png";
+    } else if (j == 4) {
+        document.getElementById("popup").src = "img/play4.png";
+    }
+
+
     let face = Math.floor(Math.random() * 6) + 1;
     switch (face) {
         case 1:
@@ -149,6 +168,7 @@ function sorteioDado(){
                 document.getElementById('play'+ j).style.left = c6.left + 'px';
                 document.getElementById('play'+ j).style.top = c6.top + 'px';
                 j++;
+
                 if (j > 4){
                     j = 1;
                 }
