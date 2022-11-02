@@ -2,18 +2,15 @@ var ultimaFace = 1;
 var faceAnterior = 1;
 var j = 1;
 
-// Se j for 1: ampliar o tamanho da peça branca
-// Se j for 2: reduzir o tamanho da peça branca e aumentar da azul
-// Se j for 3: reduzir o tamanho da peça azul e aumentar da preta
-// Se j for 4: reduzir o tamanho da peça preta e aumentar da verde
-
-
+var p1 = 0
+var p2 = 0
+var p3 = 0
+var p4 = 0
 
 function sorteioDado(){
 
 
     if (j == 1) {
-        // enviar a imagem play1.png
         document.getElementById("popup").src = "img/play1.png";
     } else if (j == 2) {
         document.getElementById("popup").src = "img/play2.png";
@@ -32,10 +29,13 @@ function sorteioDado(){
 
                 document.getElementById('play'+ j).style.left = c1.left + 'px';
                 document.getElementById('play'+ j).style.top = c1.top + 'px';
+
                 j++;
                 if (j>4){
                     j = 1;
                 }
+
+                play+j++
                 
             } else {
                 document.getElementById('face').src = 'img/face1.png';
@@ -46,6 +46,8 @@ function sorteioDado(){
                 if (j>4){
                     j = 1;
                 }
+
+                
             };
             document.getElementById('ultimoSorteado').innerHTML = 'Face Anterior: ' + faceAnterior;
             ultimaFace = 1;
