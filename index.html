@@ -15,6 +15,7 @@
     <script src="JavaScript/sorte.js"></script>
     <script src="JavaScript/pergunta.js"></script>
     <script src="JavaScript/time.js"></script>
+    <script src="JavaScript/ordem.js"></script>
 </head>
 <body>
     <div class="container" id="container">
@@ -29,11 +30,11 @@
         <div id="div_dado">
             <img id="face" src="img/face1.png" onclick="sorteioDado()">
             <h3 id="ultimoSorteado">Face anterior: </h3>
-            <h3 id="avisoDualsSorteio"></h3>
+            <h3 id="cor" ></h3>
         </div> 
 
         <div id="div_sorte">
-            <img id="sorte" src="img/sorte.png" alt="" onclick="sorteioSorte()">
+            <img id="sorte" src="img/sorte.png" alt="" onclick="SorteioSorte()">
             <h4 id="sorte_sorteada">Sorte ou Azar</h4>
         </div> 
 
@@ -42,9 +43,7 @@
             <h4 id="pergunta">Você deverá responder uma pergunta</h4>
         </div> 
 
-        <div class="info">
-            <h1 id="info"></h1>
-        </div>
+
 
 
         <div id="imagem">
