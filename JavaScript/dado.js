@@ -1,6 +1,9 @@
 var ultimaFace = 1;
 var faceAnterior = 1;
 var j = 1;
+if (j == 4){
+    j = 1;
+}
 
 function sorteioDado(){
     
