@@ -1,6 +1,8 @@
 body{
     overflow: hidden;
-    background-image: url(https://i.pinimg.com/originals/7d/85/6c/7d856c30e5e314f2cd6507c214ff7c92.jpg);
+    background-image: url(https://st.depositphotos.com/1291951/2496/i/600/depositphotos_24960671-stock-photo-dark-blue-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #imgjogo{
@@ -44,10 +46,12 @@ body{
 }
 #div_dado{
     position: absolute;
-    background-color: darkgray;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(28, 11, 113) 0%, rgba(118,12,179,1) 95%);
+    color: white;
     margin-left: 1130px;
     opacity: 95%;
-    width: 270px;
+    width: 280px;
     height: 180px;
     border-radius: 15px;
     padding: 5px;
@@ -63,7 +67,9 @@ h3, h4{
 }
 #div_sorte{
     position: absolute;
-    background-color: darkgray;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(28, 11, 113) 0%, rgba(118,12,179,1) 95%);
+    color : white;
     margin-top: 210px;
     margin-left: 1130px;
     opacity: 90%;
@@ -74,8 +80,10 @@ h3, h4{
 }
 #div_pergunta{
     position: absolute;
-    background-color: darkgray;
-    margin-top: 400px;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(28, 11, 113) 0%, rgba(118,12,179,1) 95%);
+    color: white;
+    margin-top: 440px;
     margin-left: 1130px;
     opacity: 90%;
     width: 270px;
