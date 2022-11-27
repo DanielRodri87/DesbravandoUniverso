@@ -7,9 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title"></h1>
-    <h3 id="curiosidade"></h3>
-    <h4 id="casas"></h4>
+    <div class="container">
+        <h1 id="title"></h1>
+        <h3 id="curiosidade"></h3>
+        <h4 id="casas"></h4>
+    </div>
 </body>
 <style>
     body{
@@ -19,6 +21,20 @@
     h1{
         text-align: center;
     }
+
+    .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        border: 1px solid #fff;
+        border-radius: 10px;
+        padding: 10px;
+        text-align: justify;
+
+    }
+
 </style>
 <script>
 
