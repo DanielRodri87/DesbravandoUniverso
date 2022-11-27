@@ -7,15 +7,49 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>SORTUDO</h1>
+    <h1 id="title"></h1>
+    <h3 id="curiosidade"></h3>
+    <h4 id="casas"></h4>
 </body>
 <style>
     body{
-        background-color: #000;
+        background-color: #0b236d;
         color: #fff;
     }
     h1{
         text-align: center;
     }
 </style>
+<script>
+
+    // Sorte ou Azar
+    var sorte = ["Sorte!", "Azar!"];
+    var sorte_azar = sorte[Math.floor(Math.random() * sorte.length)];
+    document.getElementById("title").innerHTML = sorte_azar;
+
+    // Curiosidade
+    var curio = [
+        "Muitos cientistas afirmam que os cometas se originaram de resíduos deixados pela condensação da nebulosa que formou o Sistema Solar.",
+        "A Lua é o único satélite natural do Sistema Solar.",
+        "Os primeiros planetas localizados fora do Sistema Solar foram descobertos em 1992.",
+        "A Terra é o terceiro planeta mais próximo do Sol.",
+        "A Lua é o único satélite natural do Sistema Solar.",
+
+    ];
+    var curiosidade = curio[Math.floor(Math.random() * curio.length)];
+    document.getElementById("curiosidade").innerHTML = curiosidade;
+
+    // Casas
+    // Se title for sorte, deve ser sorteado um número de 1 a 3
+    // Se title for azar, deve ser sorteado um número de -3 a -1
+    var csorte = [1, 2, 3];
+
+    if (sorte_azar == "Sorte!") {
+        var casa = csorte[Math.floor(Math.random() * csorte.length)];
+        document.getElementById("casas").innerHTML = "Avance " + casa + " casas.";
+    } else {
+        var casa = caz[Math.floor(Math.random() * csorte.length)];
+        document.getElementById("casas").innerHTML = "Retroceda " + casa + " casas.";
+    }
+</script>
 </html>
