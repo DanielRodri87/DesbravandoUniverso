@@ -58,13 +58,14 @@
     // Casas
 
     var csorte = [1, 2, 3];
+    
 
     if (sorte_azar == "Sorte!") {
         var casa = csorte[Math.floor(Math.random() * csorte.length)];
         document.getElementById("casas").innerHTML = "Avance " + casa + " casas.";
     } else {
-        var casa = caz[Math.floor(Math.random() * csorte.length)];
-        document.getElementById("casas").innerHTML = "Retroceda " + casa + " casas.";
+        var casa = csorte[Math.floor(Math.random() * csorte.length)];
+        document.getElementById("casas").innerHTML = "Recue " + casa + " casas.";
     }
 </script>
 </html>
