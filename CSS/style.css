@@ -14,28 +14,27 @@ body{
 
 .player{
     position: absolute;
-    margin-top: 510px;
     width: 30px;
 }
 
 #play1{
-    margin-top: 35px;
-    margin-left: 50px;
+    margin-top: 45px;
+    margin-left: 1010px;
 
 }
 #play2{
-    margin-top: 35px;
-    margin-left: 50px;
+    margin-top: 39px;
+    margin-left: 980px;
 
 }
 #play3{
-    margin-top: 35px;
-    margin-left: 50px;
+    margin-top: -6px;
+    margin-left: 1010px;
 
 }
 #play4{
-    margin-top: 35px;
-    margin-left: 50px;
+    margin-top: -6px;
+    margin-left: 980px;
 
 }
 #face {
