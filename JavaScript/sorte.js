@@ -1,16 +1,6 @@
 function sorteioSorte(){
-    var sortes = [
-        "Volte uma posição!",
-        "Avance duas posições!",
-        "Fique uma rodada sem jogar!",
-        "Jogue o dado novamente!",
-        "Volte duas posições!",
-        "Avance três posições! Que sorte!",
-        "Volte três posições!",
-        "Volte para a posição onde estava"
-    ];
-    var sorteio = Math.floor(Math.random() * sortes.length);
-    var fraseSorteada = sortes[sorteio];
-    document.getElementById('sorte_sorteada').innerHTML = fraseSorteada;
-    document.getElementById('pergunta').innerHTML = 'Você deverá responder uma pergunta';
-};
+    var janela = window.open("file:///C:/Users/danie/OneDrive/%C3%81rea%20de%20Trabalho/DesbravandoUniverso/JavaScript/sorteiosorte.html", "sorte", "width=700, height=700, align=center");
+}
+function sorteioPergunta(){
+    var janela = window.open("file:///C:/Users/danie/OneDrive/%C3%81rea%20de%20Trabalho/DesbravandoUniverso/JavaScript/sorteiopergunta.html", "sorte", "width=700, height=700, align=center");
+}

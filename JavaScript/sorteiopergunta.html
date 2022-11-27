@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSS - Desbravando o Sistema Solar    </title>
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="questoes">
+                <form method="POST" id="resposta">
+                    <div> 1. Qual o nome do planeta mais próximo do Sol?</div>
+                    <p>
+                        <input type="radio" id="a" name="answer" value="a"  data-resultado="true">
+                        <label for="a">A) Mercúrio</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="b" name="answer" value="a">
+                        <label for="a">B) Júpiter</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="c" name="answer" value="a">
+                        <label for="a">C) Terra</label>
+                    </p>
+                    <p>
+                        <input type="radio" id="d" name="answer" value="a">
+                        <label for="a">D) Marte</label>
+                    </p>    
+                    <p>
+                        <input type="radio" id="e" name="answer" value="a">
+                        <label for="a">E) Vênus</label>
+                    </p>    
+
+                    <input type="submit" value="validar" id="validar"/>
+
+
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+<style>
+    *{margin: 0 ; padding: 0}
+
+    p{padding: 10px;}
+    .row{ margin: 0 auto;}
+
+    body{background-color: #330077; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 1.5; text-align: center;}
+
+    .resultado_certo{
+        background-color: #00FF00;
+        padding: 5px;
+
+    }
+
+    .resultado_errado{
+        padding: 5px;
+        background-color: #FF0000;
+
+    }
+</style>
+
+<script>
+    $(document).ready(function() {
+    $("#resposta").submit(function(e) {
+        e.preventDefault();
+
+        const resultado ={
+            selecionado: $("input:checked")[0],
+            certo: $('[data-resultado="true"]')[0],
+        }
+        if(resultado.selecionado == resultado.certo){
+        
+            $(resultado.selecionado).parent().css("background-color", "green");
+            
+        }else{
+            $(resultado.selecionado).parent().css("background-color", "red");
+            $(resultado.certo).parent().css("background-color", "green");
+          
+        }
+        $("input[type='submit']").prop("disabled", true);
+
+
+    });
+});
+</script>
+</html>

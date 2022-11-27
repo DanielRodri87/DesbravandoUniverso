@@ -65,6 +65,14 @@ h3, h4{
     margin-right: auto;
     width: 90px;
 }
+
+#pergunta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90px;
+}
+
 #div_sorte{
     position: absolute;
     background: rgb(2,0,36);
