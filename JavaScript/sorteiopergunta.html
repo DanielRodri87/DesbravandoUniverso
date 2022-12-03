@@ -1,50 +1,18 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSS - Desbravando o Sistema Solar    </title>
-
-
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-
-    <script src="js/script.js"></script>
+    <title>perguntasss</title>
 </head>
 <body>
+    <!-- criar uma pergunta com três alternativas, e um botão "ver resposta" -->
     <div class="container">
-        <div class="row">
-            <div class="questoes">
-                <form method="POST" id="resposta">
-                    <div> 1. Qual o nome do planeta mais próximo do Sol?</div>
-                    <p>
-                        <input type="radio" id="a" name="answer" value="a"  data-resultado="true">
-                        <label for="a">A) Mercúrio</label>
-                    </p>
-                    <p>
-                        <input type="radio" id="b" name="answer" value="a">
-                        <label for="a">B) Júpiter</label>
-                    </p>
-
-                    <p>
-                        <input type="radio" id="d" name="answer" value="a">
-                        <label for="a">C) Marte</label>
-                    </p>    
-
-
-                    <input type="submit" value="validar" id="validar"/>
-
-
-
-                </form>
-
-            </div>
-        </div>
-
+        <h3 id="pergunta"></h3>
+        <button id="ver-resposta">Ver resposta</button>
+        <h3 id="resposta"></h3>
     </div>
-
-
 </body>
 <style>
     *{margin: 0 ; padding: 0}
@@ -67,42 +35,61 @@
         
     }
 
-    .resultado_certo{
-        background-color: #00FF00;
-        padding: 5px;
-
-    }
-
-    .resultado_errado{
-        padding: 5px;
-        background-color: #FF0000;
-
-    }
 </style>
-
 <script>
-    
-    $(document).ready(function() {
-    $("#resposta").submit(function(e) {
-        e.preventDefault();
 
-        const resultado ={
-            selecionado: $("input:checked")[0],
-            certo: $('[data-resultado="true"]')[0],
-        }
-        if(resultado.selecionado == resultado.certo){
-        
-            $(resultado.selecionado).parent().css("background-color", "green");
-            
-        }else{
-            $(resultado.selecionado).parent().css("background-color", "red");
-            $(resultado.certo).parent().css("background-color", "green");
-          
-        }
-        $("input[type='submit']").prop("disabled", true);
+    const perguntas = [
+        {
+            pergunta: "Qual é o planeta mais próximo do Sol?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "b) Mercúrio"
+        },
+        {
+            pergunta: "Qual é o planeta mais distante do Sol?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "c) Vênus"
+        },
+        {
+            pergunta: "Qual é o planeta mais quente?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "b) Mercúrio"
+        },
+        {
+            pergunta: "Qual é o planeta mais frio?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "c) Vênus"
+        },
+        {
+            pergunta: "Qual é o planeta mais denso?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "b) Mercúrio"
+        },
+        {
+            pergunta: "Qual é o planeta mais leve?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "c) Vênus"
+        },
+        {
+            pergunta: "Qual é o planeta mais seco?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "b) Mercúrio"
+        },
+        {
+            pergunta: "Qual é o planeta mais úmido?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "c) Vênus"
+        },
+        {
+            pergunta: "Qual é o planeta mais jovem?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "b) Mercúrio"
+        },
+        {
+            pergunta: "Qual é o planeta mais velho?<br>a) Terra<br>b) Mercúrio<br>c) Vênus",
+            resposta: "c) Vênus"
+        },
+    ]
+
+    // criar uma função que sorteia uma pergunta aleatória
+    var perguntaSorteada = perguntas[Math.floor(Math.random() * perguntas.length)];
+    var resposta = perguntaSorteada.resposta;
+
+    document.getElementById("pergunta").innerHTML = perguntaSorteada.pergunta;
+    document.getElementById("ver-resposta").addEventListener("click", function(){
+        document.getElementById("resposta").innerHTML = resposta;
+    })
 
 
-    });
-});
 </script>
 </html>
