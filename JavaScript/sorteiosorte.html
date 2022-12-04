@@ -8,41 +8,159 @@
 </head>
 <body>
     <div class="container">
-        <h1 id="title"></h1>
-        <h3 id="curiosidade"></h3>
-        <h4 id="casas"></h4>
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">DESBRAVANDO O UNIVERSO</h2>
+                <p class="description description-primary">Não apenas de conhecimentos se vive, você depende de sua sorte!</p>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Preparado?</h2>
+                <p class="description description-second" id="title"></p>
+                <p id="curiosidade"></p>
+                <p id="casas"></p>
+            </div>
+        </div>
     </div>
 </body>
 <style>
-    body{
-        background-color: #0b236d;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: #f5f5f5;
+        font-family: 'Open Sans', sans-serif;
+    }
+    p{
+        /* espaçar entre as bordas */
+        padding: 0 20px;
+
+    }
+    #casas{
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 80px;
+        color: #7f8c8d;
+    }
+    #title{
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ecf0f1;
+        text-align: justify;
+    }
+    .content {
+        background-color: #fff;
+        border-radius: 15px;
+        width: 960px;
+        height: 50%;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    .content::before {
+        content: "";
+        position: absolute;
+        background-color: #010D48;
+        width: 40%;
+        height: 100%;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+
+
+        left: 0;
+    }
+    .title {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+    }
+    .title-primary {
         color: #fff;
     }
-    h1{
-        text-align: center;
+    .title-second {
+        color: #010D48;
     }
-
-    .container{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
+    .description {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    .description-primary {
+        color: #fff;
+    }
+    .description-second {
+        color: #7f8c8d;
+    }
+    .btn {
+        border-radius: 15px;
+        border-color: #010D48;
+        text-transform: uppercase;
+        color: #010D48;
+        font-size: 10px;
+        padding: 10px 50px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 150px;
+        align-self: center;
+        margin-top: 1rem;
+    }
+    .btn-primary {
+        background-color: transparent;
         border: 1px solid #fff;
-        border-radius: 10px;
-        padding: 10px;
-        text-align: justify;
-
+        transition: background-color .5s;
+    }
+    .btn-primary:hover {
+        background-color: #fff;
+        color: #010D48;
+    }
+    .btn-second {
+        background-color: #010D48;
+        border: 1px solid #010D48;
+        transition: background-color .5s;
+    }
+    .btn-second:hover {
+        background-color: #fff;
+        border: 1px solid #010D48;
+        color: #010D48;
+    }
+    .first-content {
+        display: flex;
+    }
+    .first-content .second-column {
+        z-index: 11;
+    }
+    .first-column {
+        text-align: center;
+        width: 40%;
+        z-index: 10;
+    }
+    .second-column {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-column .btn {
+        margin-top: 2rem;
+    }
+    .second-column .btn:hover {
+        background-color: #010D48;
+        border: 1px solid #010D48;
+        color: #fff;
     }
 
 </style>
 <script>
-
-    // Sorte ou Azar
-    var sorte = ["Sorte!", "Azar!"];
-    var sorte_azar = sorte[Math.floor(Math.random() * sorte.length)];
-    document.getElementById("title").innerHTML = sorte_azar;
-
     // Curiosidade
     var curio = [
         "Muitos cientistas afirmam que os cometas se originaram de resíduos deixados pela condensação da nebulosa que formou o Sistema Solar.",
@@ -88,28 +206,31 @@
 
     ];
     
+    var cronometro = 5;
+    var cronometroId = setInterval(function(){
+        cronometro--;
+        document.getElementById('title').innerHTML = "O sorteio será realizado em " + cronometro + " segundos!";
 
-    var curiosidade = curio[Math.floor(Math.random() * curio.length)];
-    document.getElementById("curiosidade").innerHTML = curiosidade;
+        if(cronometro == 0){
+            clearInterval(cronometroId);
+            var sorte = ["Sorte!", "Azar!"];
+            var sorte_azar = sorte[Math.floor(Math.random() * sorte.length)];
+            document.getElementById("title").innerHTML = sorte_azar;
 
-    var csorte = [1, 2, 3]; 
+            var curiosidade = curio[Math.floor(Math.random() * curio.length)];
+            document.getElementById("curiosidade").innerHTML = curiosidade;
 
-    if (sorte_azar == "Sorte!") {
-        var casa = csorte[Math.floor(Math.random() * csorte.length)];
-        document.getElementById("casas").innerHTML = "Avance " + casa + " casas.";
-    } else {
-        var casa = csorte[Math.floor(Math.random() * csorte.length)];
-        document.getElementById("casas").innerHTML = "Retroceda " + casa + " casas.";
-    }
-   
-   
+            var csorte = [1, 2, 3]; 
 
-
-
-
-
-
-
-
+            if (sorte_azar == "Sorte!") {
+                var casa = csorte[Math.floor(Math.random() * csorte.length)];
+                document.getElementById("casas").innerHTML = "Avance " + casa + " casas.";
+            } else {
+                var casa = csorte[Math.floor(Math.random() * csorte.length)];
+                document.getElementById("casas").innerHTML = "Retroceda " + casa + " casas.";
+            }
+        }
+    }, 1000);
+    
 </script>
 </html>
