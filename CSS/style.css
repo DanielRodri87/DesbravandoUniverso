@@ -18,12 +18,12 @@ body{
 }
 
 #play1{
-    margin-top: 45px;
+    margin-top: 65px;
     margin-left: 1010px;
 
 }
 #play2{
-    margin-top: 39px;
+    margin-top: 65px;
     margin-left: 980px;
 
 }
@@ -46,14 +46,16 @@ body{
 #div_dado{
     position: absolute;
     background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(28, 11, 113) 0%, rgba(118,12,179,1) 95%);
+    background: -webkit-radial-gradient(center, ellipse cover, #2B3385 0%,#162d42 100%);
     color: white;
-    margin-left: 1130px;
-    opacity: 95%;
-    width: 280px;
+    margin-top: 10px;
+    margin-left: 1170px;
+    opacity: 90%;
+    width: 270px;
     height: 180px;
     border-radius: 15px;
-    padding: 5px;
+    padding: 15px;
+    padding-top: 25px;
 }
 h3, h4{
     text-align: center;
@@ -75,10 +77,10 @@ h3, h4{
 #div_sorte{
     position: absolute;
     background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(28, 11, 113) 0%, rgba(118,12,179,1) 95%);
+    background: -webkit-radial-gradient(center, ellipse cover, #2B3385 0%,#162d42 100%);
     color : white;
-    margin-top: 210px;
-    margin-left: 1130px;
+    margin-top: 240px;
+    margin-left: 1170px;
     opacity: 90%;
     width: 270px;
     height: 180px;
@@ -88,10 +90,10 @@ h3, h4{
 #div_pergunta{
     position: absolute;
     background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgb(28, 11, 113) 0%, rgba(118,12,179,1) 95%);
+    background: -webkit-radial-gradient(center, ellipse cover, #2B3385 0%,#162d42 100%);
     color: white;
-    margin-top: 440px;
-    margin-left: 1130px;
+    margin-top: 470px;
+    margin-left: 1170px;
     opacity: 90%;
     width: 270px;
     height: 180px;
