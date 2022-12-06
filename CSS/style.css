@@ -1,6 +1,6 @@
 body{
     overflow: hidden;
-    background-image: url(https://st.depositphotos.com/1291951/2496/i/600/depositphotos_24960671-stock-photo-dark-blue-background.jpg);
+    background-image: url(https://images.alphacoders.com/805/thumb-1920-805180.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -10,6 +10,10 @@ body{
     width: 1100px;
     height: 610px;
     border-radius: 15px;
+}
+#imagem{
+    border-radius: 10%;
+    padding-top: 77px;
 }
 
 .player{
@@ -50,12 +54,16 @@ body{
     color: white;
     margin-top: 0px;
     margin-left: 1170px;
-    opacity: 90%;
+    opacity: 80%;
     width: 270px;
     height: 180px;
     border-radius: 15px;
     padding: 15px;
     padding-top: 25px;
+}
+#div_dado :hover, #div_sorte :hover, #div_pergunta :hover{
+    transform: scale(1.1);
+
 }
 h3, h4{
     text-align: center;
@@ -81,7 +89,7 @@ h3, h4{
     color : white;
     margin-top: 240px;
     margin-left: 1170px;
-    opacity: 90%;
+    opacity: 80%;
     width: 270px;
     height: 180px;
     border-radius: 15px;
@@ -94,7 +102,7 @@ h3, h4{
     color: white;
     margin-top: 470px;
     margin-left: 1170px;
-    opacity: 90%;
+    opacity: 80%;
     width: 270px;
     height: 180px;
     border-radius: 15px;
@@ -127,6 +135,7 @@ button:hover{
     transition: all 200ms ease-in;
     transform: scale(1.1);
 }
+
 
 .vez{
     position: absolute;
