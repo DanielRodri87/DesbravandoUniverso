@@ -6,14 +6,10 @@ body{
 }
 
 #imgjogo{
-    margin-left: 0;
+    padding-top: 77px;
     width: 1100px;
     height: 610px;
     border-radius: 15px;
-}
-#imagem{
-    border-radius: 10%;
-    padding-top: 77px;
 }
 
 .player{
@@ -54,7 +50,7 @@ body{
     color: white;
     margin-top: 0px;
     margin-left: 1170px;
-    opacity: 80%;
+    opacity: 70%;
     width: 270px;
     height: 180px;
     border-radius: 15px;
@@ -63,6 +59,10 @@ body{
 }
 #div_dado :hover, #div_sorte :hover, #div_pergunta :hover{
     transform: scale(1.1);
+    /* nitidez */
+    -webkit-transform: scale(1.1);
+    transition: 0.5s;
+
 
 }
 h3, h4{
@@ -89,7 +89,7 @@ h3, h4{
     color : white;
     margin-top: 240px;
     margin-left: 1170px;
-    opacity: 80%;
+    opacity: 70%;
     width: 270px;
     height: 180px;
     border-radius: 15px;
@@ -102,7 +102,7 @@ h3, h4{
     color: white;
     margin-top: 470px;
     margin-left: 1170px;
-    opacity: 80%;
+    opacity: 70%;
     width: 270px;
     height: 180px;
     border-radius: 15px;
