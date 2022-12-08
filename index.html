@@ -14,7 +14,7 @@
     <script src="JavaScript/dado.js"></script>
     <script src="JavaScript/sorte.js"></script>
     <script src="JavaScript/time.js"></script>
-    <script src="JavaScript/winners.js"></script>
+    <script src="JavaScript/regras.js"></script>
 </head>
 <body>
     <!-- PARA FINS DE EXEMPLO, OPTEI POR NÃO UTILIZAR 'FOR' E 'ALT' -->
@@ -42,12 +42,14 @@
             <img id="pergunta" src="img/pergunta.png" alt="" onclick="sorteioPergunta()">
             <h4 id="pergunta">Perguntas</h4>
         </div> 
+        <div id="div_duvida">
+            <img id="duvida" src="img/procurar.png" width="70px" height="70px" alt="" onclick="regras()">
+        </div> 
 
         <div id="imagem">
             <img id="imgjogo" src="img/background.jpg" width="10px" height="10px" alt="">
         </div>
-        <div id="div_duvida">
-            <img id="duvida" src="img/duvida.png" alt="" onclick="sorteioduvida()">
+
     </div>
 </body>
 </html>

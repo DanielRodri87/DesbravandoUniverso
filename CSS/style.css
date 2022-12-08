@@ -65,9 +65,13 @@ body{
     padding: 15px;
     padding-top: 25px;
 }
+#duvida{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+}
 #div_dado :hover, #div_sorte :hover, #div_pergunta :hover{
     transform: scale(1.1);
-    /* nitidez */
     -webkit-transform: scale(1.1);
     transition: 0.5s;
 
