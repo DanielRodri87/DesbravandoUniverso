@@ -4,7 +4,15 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
+#duvida{
+    /* alinhar na borda inferior */
+    position: absolute;
+    margin-top: 610px;
+    margin-left: 530px;
+    z-index: 1;
 
+
+}
 #imgjogo{
     padding-top: 77px;
     width: 1100px;
