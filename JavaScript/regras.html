@@ -1,12 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>sdjndfkj</h1>
-</body>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="swiper-bundle.min.css">
+
+        <!--=============== CSS ===============--> 
+        <link rel="stylesheet" href="style.css">
+
+        <title>Portal de duvidas</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="" class="nav__logo-img">
+                    Desbravando o Universo
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Contato</a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#trick" class="nav__link">Regras</a>
+                        </li>
+
+                        <a href="#" class="button button--ghost">Suporte</a>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x'></i>
+                    </div>
+
+                    <img src="assets/img/nav-img.png" alt="" class="nav__img">
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+
+            </nav>
+        </header>
+
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home container" id="home">
+                <div class="swiper home-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- HOME SLIDER 1 -->
+                        <section class="swiper-slide">
+                            <div class="home__content grid">
+                                <div class="home__group">
+                                    <img src="assets/img/home1-img.png" alt="" class="home__img">
+                                    <div class="home__indicator"></div>
+    
+                                    <div class="home__details-img">
+                                        <img id="sol" src="sol.png" alt="">
+                                        <h4 class="home__details-title">Capau Jogos - Suporte</h4>
+                                        <span class="home__details-subtitle">O game educacional que você merece!</span>
+                                    </div>
+                                </div>
+    
+                                <div class="home__data">
+                                    <h1 class="home__title">Você NÃO <br> sabe como<br>JOGAR?!</h1>
+                                    <p class="home__description">Fique tranquilo, nós vamos te ensinar a como jogar, e você vai se divertir muito com isso.
+                                        Apresentaremos de forma intuitiva todas as regras presentes no jogo.
+                                    </p>
+
+                                    <div class="home__buttons">
+                                        <a href="#" class="button">Vamos lá!</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+            
+            <section class="section about" id="about">
+                <h2 class="section__title">Contato</h2>
+                <div class="about__container container grid">
+                    <div class="about__data">
+                        <h3 class="about__title">Entre em contato conosco</h3>
+                        <p class="about__description">Se você tiver alguma dúvida, entre em contato conosco, e nós iremos te ajudar.</p>
+                        <div class="about__info">
+
+                            <div class="ctnFlex">
+
+                                <div class="listacontatos">
+                                    <div class="contato">
+                                        <i class='bx bx-phone-call about__icon'></i>
+                                        <div>
+                                            <h3 class="about__info-title">Telefone</h3>
+                                            <span class="about__info-name">+55 89 99499-9999</span>
+                                        </div>
+                                        <i class='bx bx-envelope about__icon'></i>
+                                        <div>
+                                            <h3 class="about__info-title">Email</h3>
+                                            <span class="about__info-name">
+                                                <span class="about__info-name">capau.developers@ifpi.edu.br</span>
+                                            <div class="contato">
+                                                <i class='bx bxl-instagram about__icon'></i>
+                                                <div>
+                                                    <h3 class="about__info-title">Instagram</h3>
+                                                    <span class="about__info-name">@capaujogos</span>
+                                                </div>
+                            </div>
+                        </div>
+
+            </section>
+<!-- REGRAS -->
+            <section class="section trick" id="trick">
+                <h2 class="section__title">REGRAS DO JOGO</h2>
+                <div class="container_regras">
+                    <div class="regra1">
+                        <h3>1° - </h3>
+                        <p>Uma partida pode ser jogada com até quatro jogadores</p>
+                    </div>
+                    <div class="regra2">
+                        <h3>2° - </h3>
+                        <p>Na rodada inicial, cada jogador deverá jogar uma vez o
+                             dado, e aquele que obtiver a maior pontuação do 
+                             dado começará a partida, seguido pelos em ordem
+                             decrescente</p>
+                    </div>
+                    <div class="regra3">
+                        <h3>3° - </h3>
+                        <p>Cada jogador deve jogar novamente o dado, e o número tirado 
+                            >no dado será o número de casas que cada jogador irá andar.</p>
+                    </div>
+                    <div class="regra4">
+                        <h3>4° - </h3>
+                        Caso o jogador caia na casa com a letra "S", indica que ele terá 
+                            uma carta surpresa para si, podendo ser azar ou sorte, e 
+                            deverá seguir a instrução que diz no final da carta surpresa</p>
+                    </div>
+                    <div class="regra5">
+                        <h3>5° - </h3>
+                        <p>Caso o jogador caia na casa com o ponto de interrogação "?". Indicará que o jogador tem uma pergunta para si. Se o jogador acertar a pergunta, avança para a casa seguinte: caso erre a pergunta, na próxima rodada deverá responder iytra pergunta para poder prosseguir. Só seguirá adiante se acertar a pergunta/p>
+                    </div>
+                    <div class="regra6">
+                        <h3>6° - </h3>
+                        <p>O Sol do jogo indica um desafio adicional (Casas vermelhas), caso o jogador cair em uma casa dentro do Sol significa que ele só terá mais uma chance na próxima rodada para sair dele: caso não saia na próxima rodada, o jogador será "queimado" e deverá voltar ao inicio</p>
+                    </div>
+                    <div class="regra7">
+                        <h3>7° - </h3>
+                        <p>Vence o jogador que primeiro chegar ao final das casas</p>
+                    </div>
+            </section>
+            
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+            <footer class="footer section">
+                <div class="footer__container container grid">
+                    <div class="footer__content">
+                        <a href="#" class="footer__logo">
+                            <img src="assets/img/logo.png" alt="" class="footer__logo-img">
+                        Desbravando Universo
+                        </a>
+
+                        <p class="footer__description">Agradecemos por fazer<br>parte de sua vida.</p>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-facebook'></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-instagram-alt' ></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-twitter' ></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Informações</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Recursos</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Novidades</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Outros Serviços</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Preços</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Descontos</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Outros Apps</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__content">
+                        <h3 class="footer__title">Nossa equipe</h3>
+                        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="#" class="footer__link">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Sobre nós</a>
+                            </li>
+                            <li>
+                                <a href="#" class="footer__link">Nossas missões</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <span class="footer__copy">&#169; Daniel Rodrigues - Desenvolvedor</span>
+
+                <img src="assets/img/footer1-img.png" alt="" class="footer__img-one">
+                <img src="assets/img/footer2-img.png" alt="" class="footer__img-two">
+            </footer>
+
+            <!--=============== SCROLL UP ===============-->
+            <a href="#" class="scrollup" id="scroll-up">
+                <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+            </a>
+        
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
