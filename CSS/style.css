@@ -1,82 +1,124 @@
-body{
-    overflow: hidden;
-    background-image: url(https://images.alphacoders.com/805/thumb-1920-805180.jpg);
+/* Zerar  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Fonte padrão */
+body {
+    font-family: 'Roboto', sans-serif;
+    /* backrground radial azul escuro e preto */
+    background: radial-gradient(circle, #010D48 0%, hsl(247, 63%, 5%) 100%);
     background-size: cover;
-    background-repeat: no-repeat;
 }
-#duvida{
-    /* alinhar na borda inferior */
+
+/* =============== JOGADORES =========== */
+
+.player {
     position: absolute;
-    margin-top: 610px;
-    margin-left: 530px;
-    z-index: 1;
-
-
+    width: 1.875rem;
 }
-#imgjogo{
-    padding-top: 77px;
-    width: 1100px;
-    height: 610px;
-    border-radius: 15px;
-}
-
-.player{
-    position: absolute;
-    width: 30px;
-}
-
 #play1{
-    margin-top: 85px;
-    margin-left: 1010px;
+    margin-top: 5.313rem;
+    margin-left: 63.125rem;
 
 }
 #play2{
-    margin-top: 85px;
-    margin-left: 980px;
+    margin-top: 5.313rem;
+    margin-left: 61.25rem;
 
 }
 #play3{
-    margin-top: 118px;
-    margin-left: 1010px;
+    margin-top: 7.375rem;
+    margin-left: 63.125rem;
 
 }
 #play4{
-    margin-top: 118px;
-    margin-left: 980px;
-
+    margin-top: 7.375rem;
+    margin-left: 61.25rem;
 }
+
+
+/* =============== TABULEIRO =========== */
+
+#imgjogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65rem;
+    height: 40rem;
+    margin-left: 3.5rem;
+    border-radius: 2rem;
+}
+/* ================ DADO ================= */
 #face {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90px;
+    width: 5.625rem;
 }
+
 #div_dado{
     position: absolute;
-    background: rgb(2,0,36);
-    background: -webkit-radial-gradient(center, ellipse cover, #2B3385 0%,#162d42 100%);
+    background: linear-gradient(90deg, #010D48 0%, hsl(247, 63%, 5%) 100%);
     color: white;
-    margin-top: 0px;
-    margin-left: 1170px;
+    margin-top: 4.5rem;
+    margin-left: 73.125rem;
     opacity: 70%;
-    width: 270px;
-    height: 180px;
-    border-radius: 15px;
-    padding: 15px;
-    padding-top: 25px;
+    width: 16.875rem;
+    height: 11.25rem;
+    border-radius: 0.938rem;
+    padding: 0.938rem;
+    padding-top: 1.563rem;
 }
-#duvida{
+
+
+/* ============ SORTE ========== */
+#sorte{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5.625rem;
+}
+
+#div_sorte{
     position: absolute;
-    margin-top: 0px;
-    margin-left: 0px;
+    background: linear-gradient(90deg, #010D48 0%, hsl(247, 63%, 5%) 100%);
+    color: white;
+    margin-top: 18.5rem;
+    margin-left: 73.125rem;
+    opacity: 70%;
+    width: 16.875rem;
+    height: 11.25rem;
+    border-radius: 0.938rem;
+    padding: 0.938rem;
+    padding-top: 1.563rem;
 }
-#div_dado :hover, #div_sorte :hover, #div_pergunta :hover{
-    transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transition: 0.5s;
 
-
+/* ============ PERGUNTA ========== */
+#pergunta{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5.625rem;
 }
+
+#div_pergunta{
+    position: absolute;
+    background: linear-gradient(90deg, #010D48 0%, hsl(247, 63%, 5%) 100%);
+    color: white;
+    margin-top: 33rem;
+    margin-left: 73.125rem;
+    opacity: 70%;
+    width: 16.875rem;
+    height: 11.25rem;
+    border-radius: 0.938rem;
+    padding: 0.938rem;
+    padding-top: 1.563rem;
+}
+
+/* ========= DEMAIS ESTILOS */
 h3, h4{
     text-align: center;
 }
@@ -84,53 +126,26 @@ h3, h4{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90px;
+    width: 5.625rem;
 }
 
 #pergunta{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90px;
+    width: 5.625rem;
 }
 
-#div_sorte{
-    position: absolute;
-    background: rgb(2,0,36);
-    background: -webkit-radial-gradient(center, ellipse cover, #2B3385 0%,#162d42 100%);
-    color : white;
-    margin-top: 240px;
-    margin-left: 1170px;
-    opacity: 70%;
-    width: 270px;
-    height: 180px;
-    border-radius: 15px;
-    padding: 15px;
-}
-#div_pergunta{
-    position: absolute;
-    background: rgb(2,0,36);
-    background: -webkit-radial-gradient(center, ellipse cover, #2B3385 0%,#162d42 100%);
-    color: white;
-    margin-top: 470px;
-    margin-left: 1170px;
-    opacity: 70%;
-    width: 270px;
-    height: 180px;
-    border-radius: 15px;
-    padding: 15px;
-    padding-top: 25px;
-}
 #botoes{
     margin-left: 10px;
     margin-top: 8px;
 }
 button{
-    margin-left: 2px;
+    margin-left: 0.125rem;
     color: white;
-    font-size: 15px;
+    font-size: 0.938rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     background-color: #8B011B;
 }
 button:hover{
@@ -148,9 +163,18 @@ button:hover{
     transform: scale(1.1);
 }
 
+#duvida{
+    margin-left: 0.125rem;
+    border: none;
+    border-radius: 0.25rem;
+    width: 3rem;
+    height: 3rem;
+}
 
-.vez{
-    position: absolute;
-    margin-top: 610px;
-    margin-left: 530px;
+/* ============= HOVER ====== */
+#div_dado :hover, #div_sorte :hover, #div_pergunta :hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transition: 0.5s;
+
 }
