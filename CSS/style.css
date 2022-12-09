@@ -44,6 +44,7 @@ body {
 
 #imgjogo{
     display: block;
+    margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     width: 65rem;
@@ -167,8 +168,8 @@ button:hover{
     margin-left: 0.125rem;
     border: none;
     border-radius: 0.25rem;
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 /* ============= HOVER ====== */
