@@ -72,7 +72,7 @@ body {
     height: 19.125rem;
     border-radius: 0.938rem;
     padding: 0.938rem;
-    padding-top: 1.563rem;
+    padding-top: 4.2rem;
 }
 
 
@@ -95,7 +95,7 @@ body {
     height: 19.125rem;
     border-radius: 0.938rem;
     padding: 0.938rem;
-    padding-top: 1.563rem;
+    padding-top: 4.2rem;
 }
 
 /* ============ PERGUNTA ========== */
@@ -117,7 +117,7 @@ body {
     height: 19.125rem;
     border-radius: 0.938rem;
     padding: 0.938rem;
-    padding-top: 1.563rem;
+    padding-top: 4.2rem;
 }
 
 /* ========= DEMAIS ESTILOS */
@@ -191,6 +191,6 @@ button:hover{
     color: white;
     text-align: center;
     padding-top: 0.5rem;
-    font-size: 0.75rem;
+    font-size: 1.25rem;
 
 }
