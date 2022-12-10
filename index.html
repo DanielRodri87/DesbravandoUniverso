@@ -26,32 +26,34 @@
             <img id="play3" class="player" class="img-responsive" src="img/Peao-Grow-Preto.png" alt=""> 
             <img id="play4" class="player" class="img-responsive" src="img/Peao-Grow-Verde.png" alt="">
         </div>
-        <!-- englobar numa div, para ficarem responsivas por meio do bootstrap -->
+
+
         <div id="botoes" class="row" >
-            <!-- div_dado responsiva -->
-            <div id="div_dado" class="col-md-3 ml-md-auto>">
+            <div id="div_dado">
                 <img id="face" src="img/face1.png" onclick="sorteioDado()">
-                <h3 id="ultimoSorteado">Face anterior: </h3>
-                <h3 id="avisoDualsSorteio"></h3>
+                <h3 id="ultimoSorteado" class="texto" >Face anterior:</h3>
+                <h3 id="avisoDualsSorteio" class="texto"></h3>
             </div> 
 
-            <div id="div_sorte" class="col-md-3 ml-md-auto>">
+            <div id="div_sorte">
                 <img id="sorte" src="img/sorte.png" alt="" onclick="sorteioSorte()">            
-                <h4 id="sorte_sorteada">Sorte ou azar</h4>
+                <h4 id="sorte_sorteada" class="texto2" >Sorte ou azar</h4>
             </div> 
 
-            <div id="div_pergunta" class="col-md-3 ml-md-auto>">
+            <div id="div_pergunta">
                 <img id="pergunta" src="img/pergunta.png" alt="" onclick="sorteioPergunta()">
-                <h4 id="pergunta">Perguntas</h4>
+                <h4 id="pergunta" class="texto3">Perguntas</h4>
             </div> 
+
+
+
             <div id="div_duvida">
-                <img id="duvida" src="img/duvida.png" width="70px" height="70px" alt="" onclick="regras()">
+                <img id="duvida" src="img/duvida.png" alt="" onclick="regras()">
             </div> 
         </div>
 
         <div id="tabuleiro">
                 <img id="imgjogo" src="img/background.jpg" alt="" class="img-responsive">
-
             </div>
 
         <span class="footer__copy">&#169; Capau - Developers</span>
