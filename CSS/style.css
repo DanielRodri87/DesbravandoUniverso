@@ -22,23 +22,23 @@ body {
 }
 
 #play1{
-    margin-top: 3.5rem;
-    margin-left: 98rem;
+    margin-top: 2.5%;
+    margin-left: 63%;
 
 }
 #play2{
-    margin-top: 3.5rem;
-    margin-left: 102rem;
+    margin-top: 2.5%;
+    margin-left: 66%;
 
 }
 #play3{
-    margin-top: 6rem;
-    margin-left: 98rem;
+    margin-top: 4%;
+    margin-left: 63%;
 
 }
 #play4{
-    margin-top: 6rem;
-    margin-left: 102rem;
+    margin-top: 4%;
+    margin-left: 66%;
 }
 
 
@@ -49,8 +49,7 @@ body {
     margin-top: 0rem;
     margin-left: auto;
     margin-right: auto;
-    width: 110.5rem;
-    height: 68rem;
+    width: 72%;
     margin-left: 0rem;
 }
 /* ================ DADO ================= */
@@ -65,11 +64,11 @@ body {
     position: absolute;
     background-color: #19274b;
     color: white;
-    margin-top: 3rem;
-    margin-left: 120rem;
+    margin-top: 2%;
+    margin-left: 75%;
     opacity: 70%;
-    width: 28.6875rem;
-    height: 19.125rem;
+    width: 20%;
+    height: 25%;
     border-radius: 0.938rem;
     padding: 0.938rem;
     padding-top: 4.2rem;
@@ -88,11 +87,11 @@ body {
     position: absolute;
     background-color: #19274b;
     color: white;
-    margin-top: 24.6rem;
-    margin-left: 120rem;
+    margin-top: 17%;
+    margin-left: 75%;
     opacity: 70%;
-    width: 28.6875rem;
-    height: 19.125rem;
+    width: 20%;
+    height: 25%;
     border-radius: 0.938rem;
     padding: 0.938rem;
     padding-top: 4.2rem;
@@ -110,11 +109,11 @@ body {
     position: absolute;
     background-color: #19274b;
     color: white;
-    margin-top: 46.2rem;
-    margin-left: 120rem;
+    margin-top: 32%;
+    margin-left: 75%;
     opacity: 70%;
-    width: 28.6875rem;
-    height: 19.125rem;
+    width: 20%;
+    height: 25%;
     border-radius: 0.938rem;
     padding: 0.938rem;
     padding-top: 4.2rem;

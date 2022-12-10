@@ -21,34 +21,38 @@
     <!-- PARA FINS DE EXEMPLO, OPTEI POR NÃO UTILIZAR 'FOR' E 'ALT' -->
 
         <div id="jogadores">
-            <img id="play1" class="player" src="img/Peao-Grow-Branco.png" alt=""> 
-            <img id="play2" class="player" src="img/Peao-Grow-Azul.png" alt=""> 
-            <img id="play3" class="player" src="img/Peao-Grow-Preto.png" alt=""> 
-            <img id="play4" class="player" src="img/Peao-Grow-Verde.png" alt="">
+            <img id="play1" class="player" class="img-responsive" src="img/Peao-Grow-Branco.png" alt=""> 
+            <img id="play2" class="player" class="img-responsive" src="img/Peao-Grow-Azul.png" alt=""> 
+            <img id="play3" class="player" class="img-responsive" src="img/Peao-Grow-Preto.png" alt=""> 
+            <img id="play4" class="player" class="img-responsive" src="img/Peao-Grow-Verde.png" alt="">
+        </div>
+        <!-- englobar numa div, para ficarem responsivas por meio do bootstrap -->
+        <div id="botoes" class="row" >
+            <!-- div_dado responsiva -->
+            <div id="div_dado" class="col-md-3 ml-md-auto>">
+                <img id="face" src="img/face1.png" onclick="sorteioDado()">
+                <h3 id="ultimoSorteado">Face anterior: </h3>
+                <h3 id="avisoDualsSorteio"></h3>
+            </div> 
+
+            <div id="div_sorte" class="col-md-3 ml-md-auto>">
+                <img id="sorte" src="img/sorte.png" alt="" onclick="sorteioSorte()">            
+                <h4 id="sorte_sorteada">Sorte ou azar</h4>
+            </div> 
+
+            <div id="div_pergunta" class="col-md-3 ml-md-auto>">
+                <img id="pergunta" src="img/pergunta.png" alt="" onclick="sorteioPergunta()">
+                <h4 id="pergunta">Perguntas</h4>
+            </div> 
+            <div id="div_duvida">
+                <img id="duvida" src="img/duvida.png" width="70px" height="70px" alt="" onclick="regras()">
+            </div> 
         </div>
 
-        <div id="div_dado">
-            <img id="face" src="img/face1.png" onclick="sorteioDado()">
-            <h3 id="ultimoSorteado">Face anterior: </h3>
-            <h3 id="avisoDualsSorteio"></h3>
-        </div> 
+        <div id="tabuleiro">
+                <img id="imgjogo" src="img/background.jpg" alt="" class="img-responsive">
 
-        <div id="div_sorte">
-            <img id="sorte" src="img/sorte.png" alt="" onclick="sorteioSorte()">            
-            <h4 id="sorte_sorteada">Sorte ou azar</h4>
-        </div> 
-
-        <div id="div_pergunta">
-            <img id="pergunta" src="img/pergunta.png" alt="" onclick="sorteioPergunta()">
-            <h4 id="pergunta">Perguntas</h4>
-        </div> 
-        <div id="div_duvida">
-            <img id="duvida" src="img/duvida.png" width="70px" height="70px" alt="" onclick="regras()">
-        </div> 
-
-        <div id="imagem">
-            <img id="imgjogo" src="img/background.jpg" class="img-fluid" alt="Imagem responsiva">
-        </div>
+            </div>
 
         <span class="footer__copy">&#169; Daniel Rodrigues - Desenvolvedor</span>
 </body>
