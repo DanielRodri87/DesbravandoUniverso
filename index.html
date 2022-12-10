@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Desbravando Universo</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/time.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -18,7 +19,6 @@
 </head>
 <body>
     <!-- PARA FINS DE EXEMPLO, OPTEI POR NÃO UTILIZAR 'FOR' E 'ALT' -->
-    <div class="container" id="container">
 
         <div id="jogadores">
             <img id="play1" class="player" src="img/Peao-Grow-Branco.png" alt=""> 
@@ -43,13 +43,13 @@
             <h4 id="pergunta">Perguntas</h4>
         </div> 
         <div id="div_duvida">
-            <img id="duvida" src="img/cuidado.png" width="70px" height="70px" alt="" onclick="regras()">
+            <img id="duvida" src="img/duvida.png" width="70px" height="70px" alt="" onclick="regras()">
         </div> 
 
         <div id="imagem">
-            <img id="imgjogo" src="img/background.jpg" alt="">
+            <img id="imgjogo" src="img/background.jpg" class="img-fluid" alt="Imagem responsiva">
         </div>
 
-    </div>
+        <span class="footer__copy">&#169; Daniel Rodrigues - Desenvolvedor</span>
 </body>
 </html>

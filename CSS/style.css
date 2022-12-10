@@ -8,35 +8,37 @@
 /* Fonte padrão */
 body {
     font-family: 'Roboto', sans-serif;
-    /* backrground radial azul escuro e preto */
-    background: radial-gradient(circle, #010D48 0%, hsl(247, 63%, 5%) 100%);
+    font-size: 12px;
+    background: radial-gradient(circle, #2E3C7B 0%, #050319 100%);
     background-size: cover;
+
 }
 
 /* =============== JOGADORES =========== */
 
 .player {
     position: absolute;
-    width: 1.875rem;
+    width: 2.25rem;
 }
+
 #play1{
-    margin-top: 5.313rem;
-    margin-left: 63.125rem;
+    margin-top: 3.5rem;
+    margin-left: 98rem;
 
 }
 #play2{
-    margin-top: 5.313rem;
-    margin-left: 61.25rem;
+    margin-top: 3.5rem;
+    margin-left: 102rem;
 
 }
 #play3{
-    margin-top: 7.375rem;
-    margin-left: 63.125rem;
+    margin-top: 6rem;
+    margin-left: 98rem;
 
 }
 #play4{
-    margin-top: 7.375rem;
-    margin-left: 61.25rem;
+    margin-top: 6rem;
+    margin-left: 102rem;
 }
 
 
@@ -44,13 +46,12 @@ body {
 
 #imgjogo{
     display: block;
-    margin-top: 1rem;
+    margin-top: 0rem;
     margin-left: auto;
     margin-right: auto;
-    width: 65rem;
-    height: 40rem;
-    margin-left: 3.5rem;
-    border-radius: 2rem;
+    width: 110.5rem;
+    height: 68rem;
+    margin-left: 0rem;
 }
 /* ================ DADO ================= */
 #face {
@@ -62,13 +63,13 @@ body {
 
 #div_dado{
     position: absolute;
-    background: linear-gradient(90deg, #010D48 0%, hsl(247, 63%, 5%) 100%);
+    background-color: #19274b;
     color: white;
-    margin-top: 4.5rem;
-    margin-left: 73.125rem;
+    margin-top: 3rem;
+    margin-left: 120rem;
     opacity: 70%;
-    width: 16.875rem;
-    height: 11.25rem;
+    width: 28.6875rem;
+    height: 19.125rem;
     border-radius: 0.938rem;
     padding: 0.938rem;
     padding-top: 1.563rem;
@@ -85,13 +86,13 @@ body {
 
 #div_sorte{
     position: absolute;
-    background: linear-gradient(90deg, #010D48 0%, hsl(247, 63%, 5%) 100%);
+    background-color: #19274b;
     color: white;
-    margin-top: 18.5rem;
-    margin-left: 73.125rem;
+    margin-top: 24.6rem;
+    margin-left: 120rem;
     opacity: 70%;
-    width: 16.875rem;
-    height: 11.25rem;
+    width: 28.6875rem;
+    height: 19.125rem;
     border-radius: 0.938rem;
     padding: 0.938rem;
     padding-top: 1.563rem;
@@ -107,13 +108,13 @@ body {
 
 #div_pergunta{
     position: absolute;
-    background: linear-gradient(90deg, #010D48 0%, hsl(247, 63%, 5%) 100%);
+    background-color: #19274b;
     color: white;
-    margin-top: 33rem;
-    margin-left: 73.125rem;
+    margin-top: 46.2rem;
+    margin-left: 120rem;
     opacity: 70%;
-    width: 16.875rem;
-    height: 11.25rem;
+    width: 28.6875rem;
+    height: 19.125rem;
     border-radius: 0.938rem;
     padding: 0.938rem;
     padding-top: 1.563rem;
@@ -146,7 +147,7 @@ button{
     color: white;
     font-size: 0.938rem;
     border: none;
-    border-radius: 0.25rem;
+    border-radius:19.125rem;
     background-color: #8B011B;
 }
 button:hover{
@@ -165,9 +166,10 @@ button:hover{
 }
 
 #duvida{
-    margin-left: 0.125rem;
+    position: absolute;
+    margin-left: 0rem;
     border: none;
-    border-radius: 0.25rem;
+    border-radius:19.125rem;
     width: 3.5rem;
     height: 3.5rem;
 }
@@ -177,5 +179,18 @@ button:hover{
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transition: 0.5s;
+
+}
+
+.footer__copy{
+    /* rodapé com copyright */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+    color: white;
+    text-align: center;
+    padding-top: 0.5rem;
+    font-size: 0.75rem;
 
 }
