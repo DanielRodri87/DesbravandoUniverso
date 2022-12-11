@@ -1,24 +1,50 @@
-// Fazer a comunicação do servidor com o cliente, tudo que acontece é reaplicado nos clientes
-// O servidor é o responsável por enviar as informações para os clientes
+// criar e rodar um servidor que redireciona para o index.html
 
-const express = require('express');
-const app = express();
-const server = require('http').Server(app);
-const io = require('socket.io')(server);
+var http = require('http');
+var fs = require('fs');
+var path = require('path');
 
-app.use(express.static('client'));
+// criando servidor
+http.createServer(function (request, response) {
+    console.log('request starting...');
 
-app.get('/helloworld', function(req, res) {
-  res.status(200).send('Hello World!');
-});
+    // pegando o arquivo index.html
+    var filePath = '.' + request.url;
+    if (filePath == './')
+        filePath = './localhost/index.html';
 
-io.on('connection', function(socket) {
-  console.log('O usuário conectou-se');
-}
-);
+    // extensão do arquivo
+    var extname = path.extname(filePath);
+    var contentType = 'localhost/html';
+    switch (extname) {
+        case '.js':
+            contentType = 'localhost/javascript';
+            break;
+        case '.css':
+            contentType = 'localhost/css';
+            break;
+    }
 
-server.listen(6677, function() {
-  console.log('Servidor está funcionando em http://localhost:6677');
-});
+    // lendo o arquivo
+    fs.readFile(filePath, function(error, content) {
+        if (error) {
+            if(error.code == 'ENOENT'){
+                fs.readFile('./404.html', function(error, content) {
+                    response.writeHead(200, { 'Content-Type': contentType });
+                    response.end(content, 'utf-8');
+                });
+            }
+            else {
+                response.writeHead(500);
+                response.end('Sorry, check with the site admin for error: '+error.code+' ..\n');
+                response.end(); 
+            }
+        }
+        else {
+            response.writeHead(200, { 'Content-Type': contentType });
+            response.end(content, 'utf-8');
+        }
+    });
+}).listen(8080);
 
-
+// rodar: node server.js
