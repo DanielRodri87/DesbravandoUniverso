@@ -8,6 +8,7 @@ function sorteioDado(){
         case 1:
             if (ultimaFace == 1){
                 document.getElementById('face').src = 'img/face1.png';
+                console.log('Face 1 novamente!');
                 document.getElementById('avisoDualsSorteio').innerHTML = 'Face 1 novamente!';
             } else {
                 document.getElementById('avisoDualsSorteio').innerHTML = '';
