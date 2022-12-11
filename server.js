@@ -1,45 +1,24 @@
-var http = require('http');
-var static = require('node-static');
+// Fazer a comunicação do servidor com o cliente, tudo que acontece é reaplicado nos clientes
+// O servidor é o responsável por enviar as informações para os clientes
 
-var path = new static.Server(`${__dirname}/localhost/index.html`)
+const express = require('express');
+const app = express();
+const server = require('http').Server(app);
+const io = require('socket.io')(server);
 
-var io = require('socket.io')(http.createServer(function(req, res) {
-    req.addListener('end', function() {
-        path.serve(req, res);
-    }).resume();
-}).listen(3000));
+app.use(express.static('client'));
 
-io.on('connection', function(socket) {
-    console.log('Conectado ao servidor');
-    socket.on('disconnect', function() {
-        console.log('Desconectado do servidor');
-    });
-    socket.on('sorteioDado', function(data) {
-        console.log(data);
-        sorteioDado();
-    });
-    socket.on('sorteioSorte', function(data) {
-        console.log(data);
-        sorteioSorte();
-    });
-    socket.on('sorteioPergunta', function(data) {
-        console.log(data);
-        sorteioPergunta();
-    });
-    socket.on('regras', function(data) {
-        console.log(data);
-        regras();
-    });
-    socket.on('move', function(data) {
-        console.log(data);
-        move(data);
-    });
-    socket.on('conf', function(data) {
-        console.log(data);
-        conf(data);
-    });
+app.get('/helloworld', function(req, res) {
+  res.status(200).send('Hello World!');
 });
 
-// comando para rodar o servidor:
-// node server.js
+io.on('connection', function(socket) {
+  console.log('O usuário conectou-se');
+}
+);
+
+server.listen(6677, function() {
+  console.log('Servidor está funcionando em http://localhost:6677');
+});
+
 
