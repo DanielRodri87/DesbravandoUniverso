@@ -10,6 +10,7 @@
     <div class="container">
         <div class="content first-content">
             <div class="first-column">
+                <h2 id="cronometro">15</h2>
                 <h2 class="title title-primary">DESBRAVANDO O UNIVERSO</h2>
                 <p class="description description-primary">Aqui você pode testar seus conhecimentos sobre o universo!</p>
         </div>
@@ -36,7 +37,21 @@
     p{
         /* espaçar entre as bordas */
         padding: 0 20px;
+    }
 
+    #cronometro{
+        border-radius: 50%;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        color: #fff;
+        background-color: #fb0808;
+        border: 1px solid #fff;
+
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     .container {
         display: flex;
@@ -423,6 +438,17 @@
         document.getElementById("resposta").innerHTML = resposta;
     })
 
+    // Cronometro de 15 segundos
+    var segundos = 15;
+    var cronometro = setInterval(function(){
+        document.getElementById("cronometro").innerHTML = segundos;
+        segundos--;
+        if(segundos < 0){
+            clearInterval(cronometro);
+            // fechar a janela
+            window.close();
+        }
+    }, 1000);
 
 </script>
 </html>
