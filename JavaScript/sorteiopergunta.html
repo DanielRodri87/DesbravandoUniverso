@@ -442,7 +442,6 @@
         },
     ]
 
-    // criar uma função que sorteia uma pergunta aleatória
     var perguntaSorteada = perguntas[Math.floor(Math.random() * perguntas.length)];
     var resposta = perguntaSorteada.resposta;
 
@@ -451,7 +450,6 @@
         document.getElementById("resposta").innerHTML = resposta;
     })
 
-    // Cronometro de 15 segundos
     var segundos = 15;
     var cronometro = setInterval(function(){
         document.getElementById("cronometro").innerHTML = segundos;
@@ -462,6 +460,10 @@
             window.close();
         }
     }, 1000);
+
+    document.getElementById("fechar").addEventListener("click", function(){
+        window.close();
+    })
 
 </script>
 </html>

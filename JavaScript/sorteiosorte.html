@@ -20,6 +20,9 @@
                 <p id="casas"></p>
             </div>
         </div>
+        <div class="fechar">
+            <button id="fechar" class="btn btn-second">Fechar</button>
+        </div>
     </div>
 </body>
 <style>
@@ -36,8 +39,32 @@
     p{
         /* espaçar entre as bordas */
         padding: 0 20px;
+    }
+
+    #cronometro{
+        border-radius: 50%;
+        padding: 5px;
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+        color: #fff;
+        background-color: #fb0808;
+        border: 1px solid #fff;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .fechar{
+        position: absolute;
+        margin-top: 40%;
+        left: 10px;
+        width: 100%;
+        text-align: center;
 
     }
+
     #casas{
         font-size: 20px;
         font-weight: bold;
@@ -106,7 +133,7 @@
         border-radius: 15px;
         border-color: #010D48;
         text-transform: uppercase;
-        color: #010D48;
+        color: #fff;
         font-size: 10px;
         padding: 10px 50px;
         cursor: pointer;
@@ -254,5 +281,9 @@
         }
     }, 1000);
     
+    document.getElementById("fechar").addEventListener("click", function(){
+        window.close();
+    })
+
 </script>
 </html>
