@@ -13,18 +13,20 @@
     }
 
     #cronometro{
+        position: absolute;
         border-radius: 50%;
-        padding: 5px;
-        width: 25px;
-        height: 25px;
-        font-size: 10px;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
         color: #fff;
-        background-color: #fb0808;
+        background-color: #9a2e2e;
         border: 1px solid #fff;
 
-        position: absolute;
-        top: 0;
+        /* Colar no canto superior esquerdo */
+        top: -12px;
         left: 0;
+
     }
     .container {
         display: flex;
