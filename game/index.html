@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Desbravando Universo</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/time.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="JavaScript/move.js"></script>
+    <script src="JavaScript/conf.js"></script>
+    <script src="JavaScript/dado.js"></script>
+    <script src="JavaScript/sorte.js"></script>
+    <script src="JavaScript/regras.js"></script>
+    <script src="../server.js"></script>
+    <script src="../socket.io.js"></script>
+</head>
+<body>
+        <div id="jogadores">
+            <img id="play1" class="player" class="img-responsive" src="img/Peao-Grow-Branco.png" alt=""> 
+            <img id="play2" class="player" class="img-responsive" src="img/Peao-Grow-Azul.png" alt=""> 
+            <img id="play3" class="player" class="img-responsive" src="img/Peao-Grow-Preto.png" alt=""> 
+            <img id="play4" class="player" class="img-responsive" src="img/Peao-Grow-Verde.png" alt="">
+        </div>
+
+
+        <div id="botoes" class="row" >
+            <div id="div_dado">
+                <img id="face" src="img/face1.png" onclick="sorteioDado()">
+                <h3 id="ultimoSorteado" class="texto" >Face anterior:</h3>
+                <h3 id="avisoDualsSorteio" class="texto"></h3>
+            </div> 
+
+            <div id="div_sorte">
+                <img id="sorte" src="img/sorte.png" alt="" onclick="sorteioSorte()">            
+                <h4 id="sorte_sorteada" class="texto2" >Sorte ou azar</h4>
+            </div> 
+
+            <div id="div_pergunta">
+                <img id="pergunta" src="img/pergunta.png" alt="" onclick="sorteioPergunta()">
+                <h4 id="pergunta" class="texto3">Perguntas</h4>
+            </div> 
+        </div>
+
+        <div id="div_duvida">
+            <img id="duvida" src="img/duvida.png" alt="" onclick="regras()">
+        </div> 
+
+        <div id="tabuleiro">
+                <img id="imgjogo" src="img/background.jpg" alt="" class="img-responsive">
+            </div>
+
+        <span class="footer__copy">&#169; Capau - Developers</span>
+</body>
+</html>
+
+
+
+
+<!-- ATUALIZAÇÃO FINAL -->

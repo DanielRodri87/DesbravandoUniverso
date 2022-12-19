@@ -1,0 +1,100 @@
+
+/* importar a font: HeadlinerNo.45 */
+@font-face {
+    font-family: 'HeadlinerNo.45';
+    src: url('../fonts/HeadlinerNo.45.ttf');
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+body{
+    background-image: url('data:image/jpeg;base64,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');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+
+button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100vh;
+}
+
+#astro{
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 10%;
+    width: 40%;
+    height: 63%;
+    z-index: 3;
+    
+}
+
+
+.tittle1{
+    /* degrade #FDB313 encima e #FEE333 embaixo */
+    background: linear-gradient(90deg, #FDB313 0%, #FEE333 100%);
+    position: absolute;
+    width: 28%;
+    height: 10%;
+    margin-left: 55%;
+    margin-top: 15%;
+}
+
+#desbravando{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    z-index: 6;
+    padding: 1%;
+    margin-left: 4%;
+}
+
+#o{
+    position: absolute;
+    width: 10%;
+    height: 40%;
+    z-index: 3;
+    padding: 1%;
+    margin-left: 88%;
+    margin-top: 12.5%;
+}
+
+#universo{
+    position: absolute;
+    width: 40.5%;
+    height: 18%;
+    z-index: 3;
+    padding: 1%;
+    margin-left: 48%;
+    margin-top: 22%;
+}
+
+.barra{
+    position: absolute;
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ccc;
+
+    margin-left: 40%;
+    margin-top: 45%;
+}
+
+.barra div{
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgb(206, 49, 49);
+
+
+}
